@@ -166,7 +166,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'real-world-rest'
+htmlhelp_basename = 'restful-api-design'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -180,7 +180,7 @@ htmlhelp_basename = 'real-world-rest'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'real-world-rest.tex', u'Real-world RESTful API Design',
+  ('index', 'restful-api-design.tex', u'Thoughs on RESTful API design',
    u'Geert Jansen', 'manual'),
 ]
 
@@ -213,6 +213,6 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'rest-world-rest', u'Real-world RESTful API Design',
+    ('index', 'restful-api-design', u'Thoughts on RESTful API design',
      [u'Geert Jansen'], 1)
 ]
