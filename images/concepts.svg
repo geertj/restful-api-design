@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   id="svg5318"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="concepts.svg"
+   inkscape:export-filename="/home/geertj/Projects/restful-api-design/images/concepts.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs5320" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.86831672"
+     inkscape:cx="579.25863"
+     inkscape:cy="380"
+     inkscape:current-layer="layer1"
+     id="namedview5322"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1023"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5324">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none"
+       id="rect5959"
+       width="1007.6968"
+       height="529.76062"
+       x="23.03307"
+       y="31.220959" />
+    <rect
+       style="fill:#ececec;stroke:none"
+       id="rect5957"
+       width="166.98976"
+       height="47.217793"
+       x="413.4436"
+       y="83.045364" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5929"
+       y="445.07632"
+       x="771.42224"
+       style="font-size:18px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="445.07632"
+         x="771.42224"
+         sodipodi:role="line"
+         id="tspan5935">Sub-collections and</tspan><tspan
+         y="467.57632"
+         x="771.42224"
+         sodipodi:role="line"
+         id="tspan4975">Sub-resources</tspan></text>
+    <rect
+       ry="11.361756"
+       y="198.81729"
+       x="667.71729"
+       height="140.12831"
+       width="181.35007"
+       id="rect5927"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.14789677;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.14789677;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5925"
+       width="181.35007"
+       height="140.12831"
+       x="677.71729"
+       y="208.81729"
+       ry="11.361756" />
+    <rect
+       ry="11.361756"
+       y="218.81729"
+       x="687.71729"
+       height="140.12831"
+       width="181.35007"
+       id="rect5923"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.14789677;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72767680999999995;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5327"
+       width="131.41174"
+       height="77.710701"
+       x="131.22688"
+       y="207.36234"
+       ry="6.3008685" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="211.90425"
+       y="290.34299"
+       id="text5329"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5331"
+         x="211.90425"
+         y="290.34299" /></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.58657074;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5337"
+       width="241.05325"
+       height="212.52975"
+       x="94.256767"
+       y="134.69096"
+       ry="4.6631513" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="155.47324"
+       y="174.02599"
+       id="text5339"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5341"
+         x="155.47324"
+         y="174.02599">Collection</tspan></text>
+    <rect
+       ry="6.3008685"
+       y="217.36234"
+       x="141.22688"
+       height="77.710701"
+       width="131.41174"
+       id="rect5349"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72767681;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72767681;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5351"
+       width="131.41174"
+       height="77.710701"
+       x="151.22688"
+       y="227.36234"
+       ry="6.3008685" />
+    <rect
+       ry="6.3008685"
+       y="237.36234"
+       x="161.22688"
+       height="77.710701"
+       width="131.41174"
+       id="rect5353"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72767681;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="185.41623"
+       y="278.82645"
+       id="text5333"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5335"
+         x="185.41623"
+         y="278.82645">Resource</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72767681;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5355"
+       width="131.41174"
+       height="77.710701"
+       x="428.71381"
+       y="262.08752"
+       ry="6.3008685" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5357"
+       y="303.55164"
+       x="452.90314"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="303.55164"
+         x="452.90314"
+         id="tspan5359"
+         sodipodi:role="line">Resource</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="211.71864"
+       y="445.07632"
+       id="text5361"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5363"
+         x="211.71864"
+         y="445.07632">A Collection with</tspan><tspan
+         sodipodi:role="line"
+         x="211.71864"
+         y="467.57632"
+         id="tspan5365">Resources</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="489.36981"
+       y="445.07632"
+       id="text5367"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5369"
+         x="489.36981"
+         y="445.07632">A Singleton</tspan><tspan
+         sodipodi:role="line"
+         x="492.23505"
+         y="467.57632"
+         id="tspan5371">Resource </tspan></text>
+    <rect
+       ry="5.5922132"
+       y="138.14592"
+       x="634.74713"
+       height="254.87308"
+       width="279.33295"
+       id="rect5375"
+       style="fill:none;stroke:#000000;stroke-width:0.69147599;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5377"
+       y="168.26772"
+       x="716.32849"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="168.26772"
+         x="716.32849"
+         id="tspan5379"
+         sodipodi:role="line">Collection</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.14789677;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5385"
+       width="181.35007"
+       height="140.12831"
+       x="697.71729"
+       y="228.81729"
+       ry="11.361756" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5387"
+       y="264.2814"
+       x="721.90662"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="264.2814"
+         x="721.90662"
+         id="tspan5389"
+         sodipodi:role="line">Resource</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5391"
+       width="145.80905"
+       height="79.164482"
+       x="718.45166"
+       y="278.91647"
+       ry="11.005226" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5393"
+       width="18.426456"
+       height="8.0615749"
+       x="734.57477"
+       y="321.25748"
+       ry="4.0307875" />
+    <rect
+       ry="4.0307875"
+       y="321.25748"
+       x="760.57477"
+       height="8.0615749"
+       width="18.426456"
+       id="rect5395"
+       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5397"
+       width="18.426456"
+       height="8.0615749"
+       x="760.57477"
+       y="333.25748"
+       ry="4.0307875" />
+    <rect
+       ry="4.0307875"
+       y="333.25748"
+       x="734.57477"
+       height="8.0615749"
+       width="18.426456"
+       id="rect5399"
+       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="742.63641"
+       y="301.13437"
+       id="text5401"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="742.63641"
+         y="301.13437"
+         id="tspan5405">Sub- collection</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="793.30908"
+       y="329.92566"
+       id="text5407"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5409"
+         x="793.30908"
+         y="329.92566">Sub-</tspan><tspan
+         sodipodi:role="line"
+         x="793.30908"
+         y="344.92566"
+         id="tspan5411">resources</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1,3;stroke-dashoffset:0"
+       id="rect5937"
+       width="904.18811"
+       height="337.57458"
+       x="57.512634"
+       y="72.610443"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="433.02173"
+       y="112.98836"
+       id="text5939"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5941"
+         x="433.02173"
+         y="112.98836" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="424.96017"
+       y="111.23009"
+       id="text5943"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5945"
+         x="424.96017"
+         y="111.23009">Resource Model</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 427.26345,116.98836 140.50173,0"
+       id="path5955"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
