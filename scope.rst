@@ -11,7 +11,7 @@ job of the RESTful API designer is two-fold.
 
 1. Understanding enough of the important details of the application for which
    an API is to be created, so that an informed decision can be made what
-   functionality needs to be exposed, now it needs to be exposed, and what
+   functionality needs to be exposed, how it needs to be exposed, and what
    functionality can instead be left out.
 2. Modeling this functionality an API that is addresses all use cases that
    come up in the real world, following the RESTful principles as close as
