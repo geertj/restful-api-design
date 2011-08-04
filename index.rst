@@ -8,7 +8,9 @@
 Lessons learnt from designing the Red Hat Enterprise Virtualization API
 -----------------------------------------------------------------------
 
-Geert Jansen <gjansen@redhat.com>
+Author: Geert Jansen <gjansen@redhat.com>
+
+Date: August 4th 2011
 
 This work is licensed under a `Creative Commons Attribution 3.0 Unported
 License <http://creativecommons.org/licenses/by/3.0/>`_.
