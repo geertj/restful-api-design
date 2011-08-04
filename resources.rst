@@ -298,7 +298,9 @@ Clients can express their preference for a certain representation format using
 the HTTP "Accept" header. The HTTP RFC defines an `elaborate set of rules
 <http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1>`_ in which
 multiple formats can be requested, each with its own priority. In the
-following example, the client tells the API that it accepts only YAML input::
+following example, the client tells the API that it accepts only YAML input:
+
+.. code-block:: none
 
   GET /api/collection
   Accept: application/x-collection+yaml
