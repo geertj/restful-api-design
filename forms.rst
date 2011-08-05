@@ -66,7 +66,7 @@ Service Definition
 `WADL <http://www.w3.org/Submission/wadl/>`_ is an approach to define a
 service description language for RESTful APIs. It tries to solve the problem
 by meticulously defining entry points and parameters to those. The problem I
-have with WADL, is that it feels very non-RESTful. I can't seen a lot of
+have with WADL, is that it feels very non-RESTful. I can't see a lot of
 difference between a method on a WADL resource, and an RPC entry point.
 
 It would be possible to construct a more RESTful service description language.
@@ -90,7 +90,7 @@ user input, and not necessarily equal to an HTML form.
 
 In my view, forms need to specify three pieces of information:
 
-1. How to contact the target and format the inpu.
+1. How to contact the target and format the input.
 2. A list of all available input fields.
 3. A list of constraints which which the input fields must comply.
 
