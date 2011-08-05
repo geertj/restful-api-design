@@ -60,7 +60,7 @@ One of the options for finding the base URL is to use the URL of the resource
 that was requested. Since a resource may appear under multiple URLs (for
 example, as part of a collection, or stand-alone), it would be a significant
 overhead to a client to remember where he retrieved a representation from. By
-using absolute URLs, this problem does present itself.
+using absolute URLs, this problem doesn't present itself.
 
 URL Templates
 =============
