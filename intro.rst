@@ -2,7 +2,7 @@
 Introduction
 ============
 
-This is essay is an attempt to put down my thoughts on how to design a
+This essay is an attempt to put down my thoughts on how to design a
 real-world yet beautiful RESTful API. It draws from the experience I have
 gained being involved in the design of the `RESTful API
 <http://bitbucket.org/geertj/rhevm-api/wiki/Home>`_ for Red Hat's Enterprise
@@ -15,7 +15,7 @@ In my definition, a real-world RESTful API is an API that provides answers to
 questions that you won't find in introductory texts, but that inevitably
 surface in the real world, such as whether or not resources should be
 described formally, how to create useful and automatic command-line
-interfaces, how to do polling, asynchronous and other non-standard type of
+interfaces, how to do polling, asynchronous and other non-standard types of
 requests, and how to deal with operations that have no good RESTful mapping.
 
 A beautiful RESTful API on the other hand is one that does not deviate from
@@ -37,4 +37,4 @@ the public discussion on the `rhevm-api mailing list
 <https://fedorahosted.org/mailman/listinfo/rhevm-api>`_.  My thanks goes to
 all people who have contributed and are still contributing to it, including
 Mark McLoughlin, Michael Pasternak, Ori Liel, Sander Hoentjen, Ewoud Kohl van
-Wijngaarden, Tomas V.V. Cox and everybody else i forgot.
+Wijngaarden, Tomas V.V. Cox and everybody else I forgot.
