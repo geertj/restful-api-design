@@ -185,7 +185,7 @@ JSON serialization of a virtual machine::
       "cores": 4,
       "speed": 3600
     },
-    "boot: {
+    "boot": {
       "devices": ["cdrom", "harddisk"]
     }
   }
@@ -287,7 +287,7 @@ One reason that is sometimes given in favor of defining detailed content types
 is that this way, the content type can be associated with a specific
 definition in some type definition language (such as XMLSchema). This,
 supposedly, facilitates client auto-discovery because a client can know
-available attributes for a certain type. I got into a lot of detail on this
+available attributes for a certain type. I go into a lot of detail on this
 topic in :doc:`forms` but the summary is that i do not agree with this
 argument.
 
