@@ -34,7 +34,7 @@ this API. Maybe the application has a GUI, and you have a requirement to add a
 programmatic interface to it. Or maybe the application was designed under the
 assumption that it would be accessed only via the API you are designing.
 
-Like any application, the application for which the API is to be created,
+Like any application, the application for which the API is to be created
 contains state. That state is dynamic, and will change due to various
 operations that are executed on it. This state, and the operations on it, need
 to be modeled and exposed, and will form the API you are designing.
