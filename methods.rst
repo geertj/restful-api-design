@@ -78,7 +78,7 @@ the PATCH was still a proposed standard waiting final approval.
 
 Many current RESTful APIs use PUT but implement the PATCH semantics. Since
 this behavior seems wide spread, and since requiring PUT to accept a full
-representation is adds a high client overhread, my recommendation would be to
+representation is adds a high client overhead, my recommendation would be to
 implement PUT as PATCH for now, until PATCH becomes widespread, at which point
 it can replace PUT and PUT can get its original meaning.
 
