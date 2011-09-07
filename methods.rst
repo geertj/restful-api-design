@@ -9,7 +9,7 @@ We already discussed that resources are the fundamental concept in a RESTful
 API, and that each resource has its own unique URL. Methods can be executed on
 resources via their URL.
 
-The table below lists the standard methods that have a well-defind meaning for
+The table below lists the standard methods that have a well-defined meaning for
 all resources and collections.
 
 =======  ==========  ==================================================
@@ -17,7 +17,7 @@ Method     Scope                         Semantics
 =======  ==========  ==================================================
 GET      collection  Retrieve all resources in a collection
 GET      resource    Retrieve a single resource
-HEAD     collection  Return all resources in a collection (header only)
+HEAD     collection  Retrieve all resources in a collection (header only)
 HEAD     resource    Retrieve a single resource (header only)
 POST     collection  Create a new resource in a collection
 PUT      resource    Update a resource
@@ -48,13 +48,13 @@ example of this is the difference between a "power off" and a "shutdown" of a
 virtual machine. Both will lead to a vm resource in the "DOWN" state.
 However, these operations are quite different.
 
-As a solutions to such non-RESTful operations, an "actions" sub-collection can
+As a solution to such non-RESTful operations, an "actions" sub-collection can
 be used on a resource. Actions are basically RPC-like messages to a resource
 to perform a certain operation. The "actions" sub-collection can be seen as a
 command queue to which new action can be POSTed, that are then executed by the
 API. Each action resource that is POSTed, should have a "type" attribute that
 indicates the type of action to be performed, and can have arbitrary other
-attributes that parametrize the operation.
+attributes that parameterize the operation.
 
 It should be noted that actions should only be used as an exception, when
 there's a good reason that an operation cannot be mapped to one of the
@@ -74,11 +74,11 @@ An alternative method called PATCH `has been proposed recently
 <http://tools.ietf.org/html/rfc5789>`_. The semantics of this call are that
 like PUT it updates a resource, but unlike PUT, it applies a delta rather than
 replacing the resource with the new representation. At the time of writing,
-the PATCH was still a proposed standard waiting final approval.
+PATCH was still a proposed standard waiting final approval.
 
 Many current RESTful APIs use PUT but implement the PATCH semantics. Since
-this behavior seems wide spread, and since requiring PUT to accept a full
-representation is adds a high client overhead, my recommendation would be to
+this behavior seems widespread, and since requiring PUT to accept a full
+representation adds a high client overhead, my recommendation is to
 implement PUT as PATCH for now, until PATCH becomes widespread, at which point
 it can replace PUT and PUT can get its original meaning.
 
@@ -95,7 +95,7 @@ retrieving the response entity at all using the HEAD HTTP method.
 
 In my view, the usefulness of this feature is dubious. First of all, it can
 increase response sizes quite significantly. Second, it can only be used when
-a resource is being returned, it does not make sense to be used with
+a resource is being returned; it does not make sense to be used with
 collections. Because I have not yet seen any good use of this header in the
 context of a RESTful API, I recommend not to implement Link headers.
 
@@ -135,7 +135,7 @@ After the response has been retrieved once with a status that is not equal to
 should not assume it will continue to be available.
 
 A client may request the server to modify its asynchronous behavior with the
-following "Except" headers:
+following "Expect" headers:
 
 * "Expect: 200-ok/201-created/204-no-content" disables all asynchronous
   functionality. The server may return a "417 Expectation Failed" 
@@ -150,7 +150,7 @@ Accepted status for any request other than GET.
 Ranges / Pagination
 ===================
 
-In case collections contain a lot of resource, it is quite a common
+When collections contain many resources, it is quite a common
 requirement for a client to retrieve only a subset of the available resources.
 This can be implemented using the Range header with a "resource" range unit:
 
@@ -183,7 +183,7 @@ when some kind of event happens.
 
 Ideally, such a notification would be implemented using a call-out from the
 server to the client. However, there is no good portable standard to do this
-over HTTP, and it also breaks with network address translation, and HTTP
+over HTTP, and it also breaks with network address translation and HTTP
 proxies.  A second approach called busy-loop polling is horribly inefficient.
 
 In my view, the best approach is what is is called "long polling". In long

@@ -3,19 +3,19 @@ Relationships
 =============
 
 As we have seen in :doc:`resources`, the resource is the fundamental unit in
-RESTful API design. Resources model an object from the application data model.
+RESTful API design. Resources model objects from the application data model.
 
 Resources do not exist in isolation, but have relationships to other other
 resources. Sometimes these relationships exist between the mapped objects in
 the application data model as well, sometimes they are specific to the RESTful
 resources.
 
-One of the fundaments of the RESTful architecture style, is these
-relationships are expressed by hyperlinks on the representation of a resource.
+One of the principles of the RESTful architecture style is that these
+relationships are expressed by hyperlinks to the representation of a resource.
 
 In our resource model, we interpret any object with an "href" attribute as a
 hyperlink. The value of the href attribute contains an absolute URL that can
-be retrieved with GET. Using GET on a such a URL get is guaranteed to be
+be retrieved with GET. Using GET on a such a URL is guaranteed to be
 side-effect free.
 
 Two types of hyperlinks are normally used:
@@ -28,7 +28,7 @@ Two types of hyperlinks are normally used:
    semantics of the relationship. I'll call these "object links," not to be
    confused with the "link objects" above.
 
-Below is an example of a virtual machine representation in YAML, that
+Below is an example of a virtual machine representation in YAML that
 illustrates the two different ways in which a relationship can be expressed::
 
   !vm
@@ -59,11 +59,11 @@ resource model (favoring link objects).
 * Link objects are used to express structural relationships in the API. So for
   example, the top-level collections, singleton resources and sub-collections
   (including actions) are all referenced using link objects.
-* Objects links are used to express semantical relationships from the
+* Object links are used to express semantic relationships from the
   application data model. In the example above, the vm to cluster link comes
   directly from the application data model and is therefore modeled as a link.
 
-Note however that sub-collections can express both a semantical relationship,
+Note however that sub-collections can express both a semantic relationship,
 as well as a structural relationship. See for example the "collection/nics"
 sub-collection to a VM in the example above. In such a case, our convention
 has been to use link objects.
@@ -93,20 +93,20 @@ point of a virtualization API using rel="collection/vms".
 Modeling Semantic Relationships
 -------------------------------
 
-Semantical relationships can be modeled either by an object link, or by a
+Semantic relationships can be modeled either by an object link, or by a
 sub-collection. I believe that choosing the right way to represent a
-sub-collection is important to get a consistent API experience for the user.
+sub-collection is important to get a consistent API experience for the client.
 I would advocate using the following rules:
 
 1. In case of a 1:N relationship, where the target object is **existentially
    dependent** on the source object, I'd recommend to use a sub-collection.
-   With existentially dependent I mean that a target object cannot exist
+   By "existentially dependent" I mean that a target object cannot exist
    without its source. In database parlance, this would be a FOREIGN KEY
    relationship with an ON DELETE CASCADE. An example of such a relationship
-   are the NICs that are associated with a VM
+   are the NICs that are associated with a VM.
 2. In case of a 1:N relationship, where there is data that is associated with
    the link, I'd recommend to use a sub-collection. Note that we are talking
-   about data here that is neither part of the source object, or the target
+   about data here that is neither part of the source object, nor the target
    object.  The resources in the sub-collection can hold the extra data. In
    this case, the data in the sub-resource would therefore be a merge of the
    data from the mapped object from the application data model, and link data.

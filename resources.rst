@@ -4,7 +4,7 @@ Resources
 
 The fundamental concept in any RESTful API is the *resource*.  A resource is
 an object with a type, associated data, relationships to other resources, and
-it has a set of methods that operate on it. It is similar to an object
+a set of methods that operate on it. It is similar to an object
 instance in an object-oriented programming language, with the important
 difference that only a few standard methods are defined for the resource
 (corresponding to the standard HTTP GET, POST, PUT and DELETE methods), while
@@ -40,7 +40,7 @@ defines for example the available data types and their behavior.
 
 Based on my experience, I have developed a strong conviction that the JSON
 data model has just the right "richness" so that it is an ideal data model for
-RESTful resources. I would recommend everybody to use it.
+RESTful resources. I would recommend that everybody use it.
 
 In JSON, just three types of data exist:
 
@@ -48,7 +48,7 @@ In JSON, just three types of data exist:
 * array
 * object
 
-Scalars types have just a single value. Arrays contain an ordered list of
+Scalar types have just a single value. Arrays contain an ordered list of
 values of arbitrary type. Objects consist of a unordered set of key:value
 pairs (also called attributes, not to be confused with XML attributes), where
 the key is a string and the value can have an arbitrary type. For more
@@ -75,7 +75,7 @@ Features of XML that are too rich include:
    either one, and it would not be clear beforehand which one a client or a
    server should use.
 2. Relevance of order. The order between child-elements is relevant in XML. It
-   is not natural in my view for objects attributes to have ordering.
+   is not natural in my view for object attributes to have ordering.
 
 The limitations of the XML data model are:
 
@@ -95,16 +95,16 @@ data model, using the following mapping rules:
 1. Resources are modeled as a JSON object. The type of the resource is
    stored under the special key:value pair "_type".
 2. Data associated with a resource is modeled as key:value pairs on the
-   JSON object. To prevent naming conflicts with internal key/value pairs,
+   JSON object. To prevent naming conflicts with internal key:value pairs,
    keys must not start with "_".
 3. The values of key:value pairs use any of the native JSON data types of
    string, number, true, false, null, or arrays thereof. Values can also be
-   objects, in which case it is modeling nested resources.
+   objects, in which case they are modeling nested resources.
 4. Collections are modeled as an array of objects.
 
 We will also refer to key:value pairs as attributes of the JSON object, and we
-will be sloppy and use that same term for data items associated with resources
-too. This use of attribute is not to be confused with XML attributes.
+will be sloppy and use that same term for data items associated with resources,
+too. This use of attributes is not to be confused with XML attributes.
 
 REST Metadata
 -------------
@@ -135,7 +135,7 @@ required as well. This is usually "RPC like" data where a setting is needed
 for an operation, and where that setting will not end up being part of the
 resource itself.
 
-One example that i can give here is where a resource creation needs a
+One example that I can give here is where a resource creation needs a
 reference to another resource that is used during the creation, but where that
 other resource will not become part of the resource itself.
 
@@ -173,7 +173,7 @@ by `RFC2046 <http://www.ietf.org/rfc/rfc2046.txt>`_.
 JSON Format
 -----------
 
-Formatting of a resource to JSON is trivial because the data model of a
+Formatting a resource to JSON is trivial because the data model of a
 resource is defined in terms of the JSON model. Below we give an example of a
 JSON serialization of a virtual machine::
 
@@ -194,7 +194,7 @@ JSON serialization of a virtual machine::
 YAML Format
 -----------
 
-Formatting to YAML is only slightly different from representing a resource in
+Formatting to YAML is only slightly different than representing a resource in
 JSON. The resource type that is stored under the "_type" key/value pair is
 serialized as a YAML "!type" annotation instead. The same virtual machine as
 above, now in YAML format::
@@ -261,7 +261,7 @@ understand. A simple implementation may choose the following representation:
 Content-Types
 =============
 
-As can be seen above, i am advocating the use of a generic content types
+As can be seen above, I am advocating the use of a generic content types
 "application/x-resource+format" and "application/x-collection+format". In my
 view this represents the right middle ground between two extremes that are
 commonly found in RESTful APIs:
@@ -288,7 +288,7 @@ is that this way, the content type can be associated with a specific
 definition in some type definition language (such as XMLSchema). This,
 supposedly, facilitates client auto-discovery because a client can know
 available attributes for a certain type. I go into a lot of detail on this
-topic in :doc:`forms` but the summary is that i do not agree with this
+topic in :doc:`forms` but the summary is that I do not agree with this
 argument.
 
 Selecting a Representation Format

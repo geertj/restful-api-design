@@ -8,7 +8,7 @@ gained being involved in the design of the `RESTful API
 <http://bitbucket.org/geertj/rhevm-api/wiki/Home>`_ for Red Hat's Enterprise
 Virtualization product, `twice <http://fedorahosted.org/rhevm-api/>`_.  During
 the design phase of the API we had to solve many of the real-world problems
-described above, but we weren't willing add non-RESTful or "RPC-like"
+described above, but we weren't willing to add non-RESTful or "RPC-like"
 interfaces to our API too easily.
 
 In my definition, a real-world RESTful API is an API that provides answers to
