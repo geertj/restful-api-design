@@ -13,7 +13,7 @@ an object instance typically has many methods.
 Resources can be grouped into *collections*. Each collection is homogeneous so
 that it contains only one type of resource, and unordered. Resources can also
 exist outside any collection. In this case, we refer to these resources as
-*singleton resources*.
+*singleton resources*. Collections are themselves resources as well.
 
 Collections can exist globally, at the top level of an API, but can also be
 contained inside a single resource. In the latter case, we refer to these
