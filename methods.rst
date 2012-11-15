@@ -21,6 +21,7 @@ HEAD     collection  Retrieve all resources in a collection (header only)
 HEAD     resource    Retrieve a single resource (header only)
 POST     collection  Create a new resource in a collection
 PUT      resource    Update a resource
+PATCH    resource    Update a resource
 DELETE   resource    Delete a resource
 OPTIONS  any         Return available HTTP methods and other options
 =======  ==========  ==================================================
@@ -34,6 +35,7 @@ two ways to find out which methods are accepted by a resource or collection.
 2. Just issue the method you want to issue, but be prepared for a "405 Method
    Not Allowed" response that indicates the method is not accepted for this
    resource or collection.
+
 
 Actions
 =======
@@ -63,24 +65,47 @@ indication that either it was designed with an RPC viewpoint rather than using
 RESTful principles, or that the API in question is naturally a better fit for
 an RPC type model.
 
+
 PATCH vs PUT
 ============
 
-In the HTTP RFC, PUT is defined to take a full new resource representation as
-the request entity. If only certain attributes are provided, it means that
-non-provided attributes should be removed (i.e. set to null).
+The HTTP RFC specifies that PUT must take a full new resource representation as
+the request entity. This means that if for example only certain attributes are
+provided, those should be remove (i.e. set to null).
 
-An alternative method called PATCH `has been proposed recently
-<http://tools.ietf.org/html/rfc5789>`_. The semantics of this call are that
-like PUT it updates a resource, but unlike PUT, it applies a delta rather than
-replacing the resource with the new representation. At the time of writing,
-PATCH was still a proposed standard waiting final approval.
+An additional method called PATCH `has been proposed recently
+<http://tools.ietf.org/html/rfc5789>`_. The semantics of this call are like PUT
+inthat it updates a resource, but unlike PUT, it applies a delta rather than
+replacing the entire resource. At the time of writing, PATCH was still a
+proposed standard waiting final approval.
 
-Many current RESTful APIs use PUT but implement the PATCH semantics. Since
-this behavior seems widespread, and since requiring PUT to accept a full
-representation adds a high client overhead, my recommendation is to
-implement PUT as PATCH for now, until PATCH becomes widespread, at which point
-it can replace PUT and PUT can get its original meaning.
+For simple resource representations, the difference is often not important, and
+many APIs simply implement PUT as a synonym for PATCH. This usually doesn't
+give any problems because it is not very common that you need to set an
+attribute to null, and if you need to, you can always explicitly include it.
+
+However for more complex representations, especially including lists, it
+becomes very important to be able to express accurately the changes you want to
+make. Therefore, it is my recommendation now to both provide PATCH and PUT, and
+make PATCH do an relative update and have PUT replace the entire resource.
+
+It is important to realize that the request entity to PATCH is of a different
+content-type that the entity that it is modifying. Instead of being a full
+resource, it is a resource that describes modifications to be made to a
+resource. For a JSON data model, which is what this essay is advocating, I
+believe that there are two sensible ways to define the patch format.
+
+1. An informal approach where you accept a dict with a partial representation
+   of the object. Only attributes that are present are updated. Attributes that
+   are not present are left alone. This approach is simple, but it has the
+   drawback that if the resource has a complex internal structure e.g.
+   containing a big list of dicts, then that entire list of dicts need to be
+   given in the entity. Effectively PATCH becomes similar to PUT again.
+
+2. A more formal approach would be to accept a list of modifications. Each
+   modification can be a dict specifying the JSON path of the node to modify,
+   the modification ('add', 'remove', 'change') and the new value.
+
 
 Link Headers
 ============
@@ -99,12 +124,13 @@ a resource is being returned; it does not make sense to be used with
 collections. Because I have not yet seen any good use of this header in the
 context of a RESTful API, I recommend not to implement Link headers.
 
+
 Asynchronous Requests
 =====================
 
 Sometimes an action takes too long to be completed in the context of a single
 HTTP request. In that case, a "202 Accepted" status can be returned to the
-client. Such a response should only be returned for POST, PUT or DELETE.
+client. Such a response should only be returned for POST, PUT, PATCH or DELETE.
 
 The response entity of a 202 Accepted response should be a regular resource
 with only the information filled in that was available at the time the request
@@ -147,6 +173,7 @@ following "Expect" headers:
 If no expectation is provided, client must be prepared to accept a 202
 Accepted status for any request other than GET.
 
+
 Ranges / Pagination
 ===================
 
@@ -174,6 +201,7 @@ provided in an OPTIONS response:
 
   HTTP/1.1 200 OK
   Accept-Ranges: resources
+
 
 Notifications
 =============
