@@ -10,11 +10,11 @@ application or service that exists independently of the API. In my view, the
 job of the RESTful API designer is two-fold.
 
 1. Understanding enough of the important details of the application for which
-   an API is to be created, so that an informed decision can be made what
+   an API is to be created, so that an informed decision can be made as to what
    functionality needs to be exposed, how it needs to be exposed, and what
    functionality can instead be left out.
-2. Modeling this functionality an API that is addresses all use cases that
-   come up in the real world, following the RESTful principles as close as
+2. Modeling this functionality in an API that addresses all use cases that
+   come up in the real world, following the RESTful principles as closely as
    possible.
 
 There are three distinct components involved in RESTful API design: the
@@ -29,8 +29,8 @@ these three components interact.
 The Application
 ===============
 
-The application for which an API is to be provided, exists independently of
-this API. Maybe the application has a GUI, and you have a requirement to add a
+The application for which an API is to be provided exists independently of
+that API. Maybe the application has a GUI, and you have a requirement to add a
 programmatic interface to it. Or maybe the application was designed under the
 assumption that it would be accessed only via the API you are designing.
 
@@ -42,7 +42,7 @@ to be modeled and exposed, and will form the API you are designing.
 The easiest way to think about the application state, is to assume that it is
 is described by an *application data model*, which can be described by an
 *Entity-Relationship diagram*. The ER-Diagram lists the details of the
-*entities* (i will call them  *objects*) in the application state, and the
+*entities* (I will call them  *objects*) in the application state, and the
 *relationships* between them.
 
 In some cases, it is very easy to create the ER diagram. For example, in case
@@ -51,9 +51,9 @@ trivially created from the schema of the database. In other cases where there
 is not such a precise definition, the job of the API designer becomes a little
 more difficult. In such a case it would actually make sense to create an ER
 diagram for the application in question. That is a useful exercise in its own
-right, as it will make you understand the application you're designing the API
-for better. But more importantly, it will also help you in designing a good
-RESTful API. We will talk more about that in a minute. Going forward, i will
+right, as it will make you better understand the application you're designing the API
+for. But more importantly, it will also help you in designing a good
+RESTful API. We will talk more about that in a minute. Going forward, I will
 assume that an ER diagram is available.
 
 In addition to understanding the application data model, and the operations on
@@ -61,7 +61,7 @@ it, you of course need an entry point into the application that allows you to
 access and change the application state. This "way in" is fully application
 dependent and could take many forms. We will call this "way in" the
 *application interface*.  Formally, this application interface could be
-considered an API as well. The difference is though that this interface is
+considered an API as well. The difference, though, is that this interface is
 usually not intended for external consumption or even fully documented.  In
 order not to introduce any confusion, we will not refer to this interface as
 an API: that term will be reserved for the RESTful API that is being designed.
@@ -90,7 +90,7 @@ Relationships between resources are expressed as hyperlinks in the
 representation of the resource. This is one of the `fundamental principles
 <http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven>`_ of
 RESTful API design. Resources also respond to a very limited set of operations
-(usually just 4), which is a second fundament of the RESTful architectural
+(usually just 4), which is a second principle of the RESTful architectural
 style.
 
 When transforming objects from the application data model to RESTful
@@ -116,8 +116,8 @@ The Client
 ==========
 
 The client consumes the RESTful API via the standard HTTP protocol. In theory,
-the service could be provided on top of other protocols as well. However,
-since HTTP is so ubiquitous, it is not sure how valuable such a mapping to
+the service could be provided on top of other protocols as well.
+Since HTTP is so ubiquitous, however, it is not certain how valuable such a mapping to
 another protocol would be in the real world. Therefore, this essay limits
 itself to describing our RESTful protocol in terms of HTTP.
 

@@ -18,9 +18,9 @@ As far as I can see, this usability issue impacts two important use cases:
    person can either be using a web browser, or a command-line tool like
    "curl".
 2. The development of a command-line or graphical interface to a RESTful API.
-   Without a proper description of required input types, knowledge around
+   Without a proper description of required input types, knowledge about
    these has to be encoded explicitly in the client. This has the disadvantage
-   that new features are not automatically exposed, and that there's strict
+   that new features are not automatically exposed, and that there are strict
    requirements around not making backwards incompatible changes.
 
 When we look at the web, this issue doesn't exist. Millions of users interact
@@ -30,7 +30,7 @@ Interactions with IT systems on the web are all self-explanatory using
 hypertext, and input is guided by forms.
 
 In fact, forms are what I see as the solution here. But before I go into that,
-let's see look into two classes of solutions that have been proposed to
+let's look into two classes of solutions that have been proposed to
 address this issue, and why I think they actually do not solve it.  The first
 is using a type definition language like XMLSchema to describe the input
 types, the second is using some kind of service description language like
@@ -39,7 +39,7 @@ WADL.
 Type Definition
 ===============
 
-As eluded to in :doc:`resources`, some RESTful APIs use a type definition
+As alluded to in :doc:`resources`, some RESTful APIs use a type definition
 language to provide information about how to construct request entities. In my
 view this is a bad approach, and has the following issues:
 
@@ -71,14 +71,14 @@ difference between a method on a WADL resource, and an RPC entry point.
 
 It would be possible to construct a more RESTful service description language.
 It would focus on mapping the RESTful concepts of resource, collection,
-relationships, links. It would probably need a type definition language as
+relationships, and links. It would probably need a type definition language as
 well to define the constraints on types for each method (again, PUT may have
 different constraints than POST). There have been discussions in the RHEV-M
 project on this.
 
 In the end though, this approach also feels wrong. What I think is needed is
 something that works like the web, where everything is self descriptive, and
-guide only by the actual URL flow the user is going through, not by reference
+guided only by the actual URL flow the user is going through, not by reference
 to some external description.
 
 Using Forms to Guide Input
@@ -201,9 +201,9 @@ multiple   Boolean that indicates if multiple values are accepted (array).
 Constraints
 -----------
 
-First we need to answer the question what kind constraints do we want to
+First we need to answer the question of what kind of constraints we want to
 express in our form definition language. I will start by mentioning that in my
-view, it is impossible to express each and every constraint client side. Some
+view, it is impossible to express each and every constraint on the client side. Some
 constraints for example require access to other data (e.g. when creating
 relationships), are computationally intensive, or even unknown to the API
 designer because they are undocumented for the application the API is written
@@ -288,8 +288,7 @@ server supports, using the rules described in :doc:`resources`.
 
 If a client requested a "text/html" representation of the form, it is assumed
 that the client is a web browser, and we assume the form will be processed as
-a regular HTML form. In this case, the server should have generate an HTML
-form with the following properties:
+a regular HTML form. In this case:
 
 * An HTML <form> should be generated, with an appropriate <input> element for
   each field.
