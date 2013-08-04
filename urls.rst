@@ -37,8 +37,8 @@ example. The table below uses the ":name" URL variable style from Rail's
 /api                            The API entry point
 /api/:coll                      A top-level collection named "coll"
 /api/:coll/:id                  The resource "id" inside collection "coll"
-/api/:coll/:id/:subcoll         Sub-collection "subcoll" under resource "id2"
-/api/:coll/:id/:subcoll/:subid  The resource "id2" inside "subcoll"
+/api/:coll/:id/:subcoll         Sub-collection "subcoll" under resource "id"
+/api/:coll/:id/:subcoll/:subid  The resource "subid" inside "subcoll"
 ==============================  =============================================
 
 Even though sub-collections may be arbitrarily nested, in my experience, you
