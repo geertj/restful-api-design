@@ -180,7 +180,7 @@ htmlhelp_basename = 'restful-api-design'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'restful-api-design.tex', u'Thoughs on RESTful API design',
+  ('index', 'restful-api-design.tex', u'Thoughts on RESTful API design',
    u'Geert Jansen', 'manual'),
 ]
 
