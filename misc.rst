@@ -48,4 +48,4 @@ an off-line store to generate any help that you would be able to generate
 online as well.
 
 An API can store a version number on its entry point, so that clients can see
-when there offline cached copy expired and can therefore generate a new one.
+when their offline cached copy expired and can therefore generate a new one.
