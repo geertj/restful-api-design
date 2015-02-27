@@ -98,7 +98,7 @@ data model, using the following mapping rules:
    JSON object. To prevent naming conflicts with internal key:value pairs,
    keys must not start with "_".
 3. The values of key:value pairs use any of the native JSON data types of
-   string, number, true, false, null, or arrays thereof. Values can also be
+   string, number, boolean, null, or arrays thereof. Values can also be
    objects, in which case they are modeling nested resources.
 4. Collections are modeled as an array of objects.
 
