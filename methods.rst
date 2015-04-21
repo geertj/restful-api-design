@@ -71,7 +71,7 @@ PATCH vs PUT
 
 The HTTP RFC specifies that PUT must take a full new resource representation as
 the request entity. This means that if for example only certain attributes are
-provided, those should be remove (i.e. set to null).
+provided, those should be removed (i.e. set to null).
 
 An additional method called PATCH `has been proposed recently
 <http://tools.ietf.org/html/rfc5789>`_. The semantics of this call are like PUT
@@ -90,7 +90,7 @@ make. Therefore, it is my recommendation now to both provide PATCH and PUT, and
 make PATCH do an relative update and have PUT replace the entire resource.
 
 It is important to realize that the request entity to PATCH is of a different
-content-type that the entity that it is modifying. Instead of being a full
+content-type than the entity that it is modifying. Instead of being a full
 resource, it is a resource that describes modifications to be made to a
 resource. For a JSON data model, which is what this essay is advocating, I
 believe that there are two sensible ways to define the patch format.
