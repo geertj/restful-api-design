@@ -234,7 +234,7 @@ Attribute                           Description
 ===========  ============================================================
 sense        One of "mandatory" or "optional"
 field        This constraint refers to a field.
-constraints  This constraint is a group with nested contrainst.
+constraints  This constraint is a group with nested constraints.
 exclusive    This is an exclusive group (groups only).
 ===========  ============================================================
 
