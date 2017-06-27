@@ -5,7 +5,7 @@ Relationships
 As we have seen in :doc:`resources`, the resource is the fundamental unit in
 RESTful API design. Resources model objects from the application data model.
 
-Resources do not exist in isolation, but have relationships to other other
+Resources do not exist in isolation, but have relationships to other
 resources. Sometimes these relationships exist between the mapped objects in
 the application data model as well, sometimes they are specific to the RESTful
 resources.
